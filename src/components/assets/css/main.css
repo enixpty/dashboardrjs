@@ -1,0 +1,75 @@
+
+@media screen and (max-height: 800px) {
+    .contenedor{
+        height:100%;
+    }
+    #nav  {
+        margin-left:  64px ;
+        padding:  15px 20px 0px ;
+        height: 1400;
+      }
+}
+
+
+@media screen and (min-width: 480px) {
+    .contenedor{
+        height:1900px;
+    }
+    #nav  {
+        margin-left:  64px ;
+        padding:  15px 20px 0px ;
+        height: 1400;
+      }
+  }
+
+#UserInfo   { 
+    position: relative;   
+    }
+
+ #nav  {
+        margin-left:  64px ;
+        padding:  15px 20px 0px ;
+        height: auto;
+      }
+ 
+.card_img{
+    width : 35px;
+    height: 35px;
+}
+#contenedor{
+    background-color: white;  
+}
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+        background-color: aquamarine;
+    }
+}
+.profile-info-name {
+    color: #336199;
+    background-color: #EDF3F4;
+    border-top: 1px solid #F7FBFF;
+    width: 22%;
+    text-align: end;
+}
+.profile-info-value {
+    padding: 6px 4px 6px 6px;
+}
+.profile-info-row {
+    display: table-row;
+}
+.profile-user-info-striped {
+    border: 1px solid #DCEBF7;
+}
+.profile-user-info {
+    display: table;
+    width: 100%;
+    width: calc(100% - 24px);
+    margin: 0 auto;
+}
+.button-save{
+    align-content: center;
+}

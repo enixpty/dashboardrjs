@@ -1,0 +1,189 @@
+.mediaViewInfo {
+    --web-view-name: login web implosa;
+    --web-view-id: login_web_implosa;
+    --web-scale-on-resize: true;
+    --web-center-horizontally: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: login_web_implosa;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#login_web_implosa {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 416px;
+    height: 812px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    --web-view-name: login web implosa;
+    --web-view-id: login_web_implosa;
+    --web-scale-on-resize: true;
+    --web-center-horizontally: true;
+    --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+#BG {
+    position: absolute;
+    width: 416px;
+    height: 811px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    overflow: visible;
+}
+#Grupo_130 {
+    position: absolute;
+    width: 176px;
+    height: 186px;
+    left: 125px;
+    top: 77px;
+    overflow: visible;
+}
+#ID1logo {
+    position: absolute;
+    width: 176px;
+    height: 186px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}	
+.camp-user {
+border-radius: 15px; 
+border: 1px solid #000000;
+position: absolute;
+overflow: visible;
+width: 341px;
+height: 52px;
+left: 0px;
+top: 0px;    
+white-space: nowrap;
+line-height: 17px;
+margin-top: -0.5px;
+text-align: center;
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+color: #000000;
+}
+.camp-username{ 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible; 
+    border-radius: 15px; 
+    border: 1px solid #000000; 
+    width: 341px;
+    height: 52px; 
+    white-space: nowrap;
+    line-height: 17px;
+    margin-top: -0.5px;
+    text-align: center;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000000;
+}
+#Inserte_su_nombre_de_usuario_y {
+    position: absolute;
+    left: 46px;
+    top: 271px;
+    overflow: visible;
+    width: 326px;
+    height: 42px;
+    line-height: 17px;
+    margin-top: -2.5px;
+    text-align: center;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(26,26,26,1);
+}	
+#Grupo_12 {
+    position: absolute;
+    width: 341px;
+    height: 219px;
+    left: 38px;
+    top: 325px;
+    overflow: visible;
+}
+#Grupo_21 {
+    position: absolute;
+    width: 341px;
+    height: 52px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Grupo_16 {
+    position: absolute;
+    width: 341px;
+    height: 52px;
+    left: 0px;
+    top: 65px;
+    overflow: visible;
+}
+.Rect_ngulo_14 {
+    position: absolute;
+    overflow: visible;
+    width: 341px;
+    height: 52px;
+    left: 0px;
+    top: 0px;
+}     
+#Grupo_21_v {
+    position: absolute;
+    width: 341px;
+    height: 52px;
+    left: 0px;
+    top: 130px;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out; 
+    cursor: pointer;
+}
+.Rect_ngulo_10 {
+    position: absolute;
+    overflow: visible;
+    width: 341px;
+    height: 52px;
+    left: 0px;
+    top: 0px;
+}
+.button {
+    position: absolute;
+           left: 0px;
+           top: 133px;
+           overflow: visible; 
+           border-radius: 15px; 
+           border: 1px solid #000000; 
+           width: 341px;
+           height: 52px; 
+           white-space: nowrap;
+           line-height: 17px;
+           margin-top: -0.5px;
+           text-align: center;
+           font-family: Karla;
+           font-style: normal;
+           font-weight: bold;
+           font-size: 16px;
+           background-color:#000000;
+           color: #fffff2;
+}
