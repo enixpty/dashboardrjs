@@ -136,7 +136,7 @@ export default function Suc() {
           }
           }).then((data) => { 
               let porc =  Math.round((data[0][0] / data[0][1]) * 100);  
-              console.log(data)
+              //console.log(data)
                settotmet(data[0][0] )
                setdtotvent(data[0][1] )
                setporcv(porc)
@@ -221,7 +221,7 @@ export default function Suc() {
               newSeries.push(obj[1])
               newLabels.push(formatDate(obj[0]) ) 
           })
-          console.log(newLabels)
+          //console.log(newLabels)
           setoptionsbar({
             chart: {
               height: 350,

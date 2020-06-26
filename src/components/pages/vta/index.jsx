@@ -15,6 +15,7 @@ import SideBar from "../../helpers/sidebar";
 import Header from "../../helpers/header";
 import Cargar from "../../helpers/cargar";
 import PiePagina from "../../helpers/footer";
+import formatDate from "../../helpers/formatDate";
 
 //others components
 import CardMont from "../../helpers/card_mont";
@@ -36,6 +37,31 @@ class Dashboard extends Component {
       dcomp: null,
       loading: true,
       expanded: false,
+      optionsVD : {
+        chart: {
+          height: 350,
+          type: 'line',
+          zoom: {
+            enabled: false
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'straight'
+        },
+        grid: {
+          row: {
+            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+          },
+        },
+        xaxis: {
+          categories: [],
+        }
+      },
+      seriesVD: [],
       series: [],
       options: {
         chart: {
@@ -120,6 +146,7 @@ class Dashboard extends Component {
     this.handlerComp = this.handlerComp.bind(this);
     this.handlerMost = this.handlerMost.bind(this);
     this.expand = this.expand.bind(this);
+    this.handlerVtaD = this.handlerVtaD.bind(this);
   }
   expand(exp) {
     if (exp) {
@@ -164,6 +191,28 @@ class Dashboard extends Component {
     this.setState({
       seriesbar: newSeries,
       loading: false,
+    });
+  }
+
+  async handlerVtaD(){
+    const datos = await fetch("http://www.implosa.com:5000/vta/rvss")
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      }
+    })
+    .then((data) => {
+      console.log(data)
+      /* let naneSeries = []; 
+      let newSeries = [];
+      let newLabels = [];
+      data.map((obj, index)=>{
+          naneSeries.push(obj[2])
+          newSeries.push(obj[1])
+          newLabels.push(formatDate(obj[0]) ) 
+      })  */
+
+
     });
   }
 
@@ -216,7 +265,7 @@ class Dashboard extends Component {
         localStorage.clear();
       });
     //console.log('token : ' +token)
-
+    this.handlerVtaD();
     this.handlerComp();
 
     this.handlerMost();
@@ -307,6 +356,18 @@ class Dashboard extends Component {
                     </Col>
                   </Row>
 
+                  <br />
+                  <Row>
+                    <Col>
+                      <Card className="card-stats mb-4 mb-lg-0 shadow card">
+                        <CardHeader className="text-uppercase text-muted mb-0">
+                          Ventas Diarias
+                        </CardHeader>
+                        <CardBody>  test
+                        </CardBody>
+                      </Card>
+                    </Col>
+                  </Row>
                   <br />
                   <Row>
                     <Col>
